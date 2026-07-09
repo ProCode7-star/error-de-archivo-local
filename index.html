@@ -43,10 +43,11 @@
         }
 
         .boton {
+            display: inline-block;
             padding: 15px 40px;
             background-color: #ff6b6b;
             color: white;
-            border: none;
+            text-decoration: none;
             border-radius: 50px;
             font-size: 18px;
             font-weight: bold;
@@ -80,9 +81,9 @@
     <div class="contenedor">
         <h1>🚀 ¿Quieres un Error?</h1>
         <p>Haz clic en el botón de abajo y obtendrás un error de archivo local</p>
-        <button class="boton" onclick="window.location.href = 'file://ejemplo.com'">
+        <a href="file://ejemplo.com" class="boton">
             Haz clic aquí
-        </button>
+        </a>
         <div class="info">
             ⚠️ Esto intentará acceder a file://ejemplo.com y te mostrará un error
         </div>
